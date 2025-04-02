@@ -95,18 +95,33 @@
 
                 <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
                     <h3 class="font-semibold mb-2">Example</h3>
-                    <ul class="text-gray-500 px-7 text-sm list-disc">
-                        <li class="py-2 border-b-1 border-gray-300">S -> S S + | S S * | a</li>
-                        
-                        <li class="py-2 border-b-1 border-gray-300">S -> 0 S 1 | 0 1</li>
-                        
-                        <li class="py-2 border-b-1 border-gray-300">S -> ( L ) | a
-                            <br>L -> L , S | S
+                    <ul id="grammar-list" class="text-gray-500 px-7 text-sm list-disc">
+                        <li class="py-2 border-b-1 border-gray-300 flex justify-between items-center">S -> S S + | S S * | a
+                            <button class="copy-btn btn btn-sm px-2 py-1 rounded text-xs text-gray-600">Copy</button>
                         </li>
                         
-                        <li class="py-2 border-b-1 border-gray-300">S -> a S b S | b S a S | ϵ</li>
-                        <li class="py-2 border-b-1 border-gray-300">S -> S + S | S S | ( S ) | S * | a</li>
-                        <li class="py-2 border-b-1 border-gray-300">S -> ( L ) | a L -> L , S | S</li>
+                        <li class="py-2 border-b-1 border-gray-300 flex justify-between items-center">S -> 0 S 1 | 0 1
+                            <button class="copy-btn btn btn-sm px-2 py-1 rounded text-xs text-gray-600">Copy</button>
+                        </li>
+                        
+                        <li class="py-2 border-b-1 border-gray-300 flex justify-between items-center">S -> ( L ) | a
+                            <br>L -> L , S | S
+                            <button class="copy-btn btn btn-sm px-2 py-1 rounded text-xs text-gray-600">Copy</button>
+
+                        </li>
+                        
+                        <li class="py-2 border-b-1 border-gray-300 flex justify-between items-center">S -> a S b S | b S a S | ϵ
+                            <button class="copy-btn btn btn-sm px-2 py-1 rounded text-xs text-gray-600">Copy</button>
+
+                        </li>
+                        <li class="py-2 border-b-1 border-gray-300 flex justify-between items-center">S -> S + S | S S | ( S ) | S * | a
+                            <button class="copy-btn btn btn-sm px-2 py-1 rounded text-xs text-gray-600">Copy</button>
+
+                        </li>
+                        <li class="py-2 border-b-1 border-gray-300 flex justify-between items-center">S -> ( L ) | a L -> L , S | S
+                            <button class="copy-btn btn btn-sm px-2 py-1 rounded text-xs text-gray-600">Copy</button>
+
+                        </li>
                     </ul>
                 </div>
 

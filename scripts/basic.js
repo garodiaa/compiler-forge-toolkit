@@ -1,3 +1,15 @@
+document.querySelectorAll(".copy-btn").forEach(button => {
+    button.addEventListener("click", function () {
+        const textToCopy = this.parentElement.innerText.replace("Copy", "").trim(); // Remove "Copy" text
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            // alert("Copied: " + textToCopy);
+        }).catch(err => console.error("Failed to copy:", err));
+    });
+});
+
+
+
+
 /**
  * Format the grammar object back to a string with productions on separate lines
  * @param {Object} grammar - The structured grammar object
