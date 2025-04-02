@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compiler Forge Toolkit</title>
 
+    <!-- favicon -->
+    <link rel="icon" href="assets/fav_ico.png" type="image/x-icon">
+
     <!-- daisy and tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -17,10 +20,14 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f6fc430968.js" crossorigin="anonymous"></script>
+
     <!-- custom css -->
     <style>
         .active {
-            background-color: #f97316;
+            background-color: #ef4444;
             color: white;
         }
     </style>
@@ -29,21 +36,26 @@
 <body class="font-[Poppins] text-gray-900">
 
     <!-- header -->
-    <header class="bg-gray-50 border-b-2 border-gray-200 sticky top-0 z-50 py-5 h-4rem">
-        <nav class="container m-auto flex justify-between items-center">
+    <header class="bg-gray-50 border-b-2 border-gray-200 sticky top-0 z-50 py-5 h-5rem">
+        <nav class="px-5 container m-auto flex justify-between items-center">
             <div>
-                <a href="index.html"><h2 class="pl-5 md:pl-0 text-lg md:text-2xl"><span class="font-bold">Compiler Forge </span>Toolkit</h2></a>
+                <a href="index.html"><img class="h-12" src="assets/logo_header.png" alt=""></a>
+            </div>
+            
+            <!-- mid -->
+            <div>
+              <ul class="flex items-center gap-7 font-semibold cursor-pointer">
+                <li class="hidden md:block"><a href="index.html" class="hover:text-red-600">Home</a></li>
+                <li class="hidden md:block"><a href="index.html" class="hover:text-red-600">Pricing</a></li>
+                <li id="btn-tools" class="py-1 text-lg text-red-500 border-red-500 transition-all duration-300 hover:scale-110"><i class="fa-solid fa-wand-magic-sparkles"></i> Tools</li>
+                <li class="hidden md:block"><a href="about.html" class="hover:text-red-600">About</a></li>
+                <li class="hidden md:block"><a href="features.html class=" hover:text-red-600">Contact</a></li>
+            </ul>
             </div>
 
             <div>
-                <ul class="flex items-center gap-5 text-lg font-semibold">
-                    <li class="pr-5 md:pr-0"><button id="btn-tools"
-                            class="btn py-1 text-lg bg-orange-500 text-white border-orange-500 hover:bg-transparent hover:text-orange-500">Tools</button>
-                    </li>
-                    <li class="hidden md:block"><a href="index.html" class="hover:text-orange-600">Home</a></li>
-                    <li class="hidden md:block"><a href="about.html" class="hover:text-orange-600">About</a></li>
-                    <li class="hidden md:block"><a href="features.html class=" hover:text-orange-600">Features</a></li>
-                </ul>
+              <button
+              class="btn py-1 bg-red-500 text-white border-red-500 hover:bg-transparent hover:text-red-500">Report a bug</button>
             </div>
         </nav>
     </header>
@@ -52,20 +64,20 @@
         <section class="container m-auto py-10">
             <div class="flex flex-wrap justify-center gap-5">
                 <button id="lr"
-                    class="active btn-tool btn bg-white text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-white">Left
+                    class="active btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">Left
                     Recursion</button>
                 <button id="lf"
-                    class="btn-tool btn bg-white text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-white">Left
+                    class="btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">Left
                     Factoring</button>
                 <button id="ff"
-                    class="btn-tool btn bg-white text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-white">First
+                    class="btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">First
                     and Follow</button>
             </div>
         </section>
 
         <!-- tool container -->
         <!-- left recursion -->
-        <section id="sec-lr" class="section mb-5 border-2 border-dashed border-orange-200 rounded-xl container m-auto">
+        <section id="sec-lr" class="section mb-5 border-2 border-dashed border-red-400 rounded-xl container m-auto">
             <div class="rounded p-5 grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
                     <h3 class="font-semibold text-2xl">Left Recursion</h3>
@@ -279,7 +291,7 @@
                     type="text"
                     placeholder="Enter your email"
                     class="input input-bordered join-item" />
-                    <button class="btn bg-orange-500 text-white join-item">Subscribe</button>
+                    <button class="btn bg-red-500 text-white join-item">Subscribe</button>
                 </div>
                 </fieldset>
             </form>
