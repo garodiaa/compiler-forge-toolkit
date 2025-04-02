@@ -60,82 +60,23 @@
         </nav>
     </header>
     
-    <main class="border-b-1 border-gray-200 bg-gray-100 px-5">
-        <section class="container m-auto py-10">
-            <div class="flex flex-wrap justify-center gap-5">
-                <button id="lr"
-                    class="active btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">Left
-                    Recursion</button>
-                <button id="lf"
-                    class="btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">Left
-                    Factoring</button>
-                <button id="ff"
-                    class="btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">First
-                    and Follow</button>
-            </div>
-        </section>
+    <main class="border-gray-200 bg-gray-100 pb-15 px-5">
 
-        <!-- tool container -->
-        <!-- left recursion -->
-        <section id="sec-lr" class="section mb-5 border-2 border-dashed border-red-400 rounded-xl container m-auto">
-            <div class="rounded p-5 grid grid-cols-1 md:grid-cols-3 gap-5">
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h3 class="font-semibold text-2xl">Left Recursion</h3>
+        <section class="container m-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+            <aside class="col-span-1 pr-5 border-r-2 border-red-500 ">
+                <div class="mb-10 flex flex-col flex-wrap justify-center gap-5">
+                    <button id="lr"
+                        class="rounded-xl text-lg active btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">Left
+                        Recursion Elimination</button>
+                    <button id="lf"
+                        class="rounded-xl text-lg btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">Left
+                        Factoring</button>
+                    <button id="ff"
+                        class="rounded-xl text-lg btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">First
+                        and Follow Set Calculation</button>
                 </div>
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h3 class="font-semibold mb-2">Supported Grammars</h3>
-                    <ul class="text-gray-500 px-7 text-sm list-disc">
-                        <li>A -> A c | A a d | b d | ϵ <br>
-                            (All tokens must be separated by space characters)</li>
-                        <li>A -> A c
-                            <br>&emsp;&emsp;| A a d
-                            <br>&emsp;&emsp;| b d
-                            <br>&emsp;&emsp;| ϵ
-                        </li>
-                        <li>S -> A a | b
-                            <br>A -> A c | S d | ϵ
-                        </li>
-                        <li>(Copy ϵ to input if needed)</li>
-                    </ul>
-                </div>
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h3 class="font-semibold mb-2">Example</h3>
-                    <ul class="text-gray-500 px-7 text-sm list-disc">
-                        <li>S -> S S + | S S * | a</li>
-                        <li>S -> 0 S 1 | 0 1</li>
-                        <li>S -> ( L ) | a
-                            <br>L -> L , S | S
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="px-5 pb-5 grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h2 class="text-xl font-bold mb-5">Input</h2>
-                    <textarea id="lr-input" class="w-full h-60 p-3 border-2 border-gray-300 rounded-lg resize-none"
-                        placeholder="Enter your input here..."></textarea>
-                    <div class="flex justify-end mt-2">
-                        <button id="btn-process-lr" class="btn btn-wide text-lg">Process</button>
-                    </div>
-                </div>
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h2 class="text-xl font-bold mb-5">Output</h2>
-                    <div class="w-full h-75 p-3 border-2 border-gray-300 rounded-lg">
-                        <p id="lr-output" class="text-gray-500">Output will be displayed here...</p>
-                    </div>
-                    <!-- <textarea class="w-full h-40 p-2 border-2 border-gray-300 rounded-lg resize-none" placeholder="Enter your input here..."></textarea> -->
-                </div>
-            </div>
-        </section>
 
-        <!-- left factoring -->
-        <section id="sec-lf"
-            class="hidden section mb-5 border-2 border-dashed border-orange-200 rounded-xl container m-auto">
-            <div class="rounded p-5 grid grid-cols-1 md:grid-cols-3 gap-5">
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h3 class="font-semibold text-2xl">Left Factoring</h3>
-                </div>
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
+                <div class="mb-5 border-1 p-5 rounded-xl bg-white border-gray-300">
                     <h3 class="font-semibold mb-2">Supported Grammars</h3>
                     <ul class="text-gray-500 px-7 text-sm list-disc">
                         <li>A -> A c | A a d | b d | ϵ <br>
@@ -151,6 +92,7 @@
                         <li>(Copy ϵ to input if needed)</li>
                     </ul>
                 </div>
+
                 <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
                     <h3 class="font-semibold mb-2">Example</h3>
                     <ul class="text-gray-500 px-7 text-sm list-disc">
@@ -161,96 +103,101 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="px-5 pb-5 grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h2 class="text-xl font-bold mb-5">Input</h2>
-                    <textarea id="lf-input" class="w-full h-60 p-3 border-2 border-gray-300 rounded-lg resize-none"
-                        placeholder="Enter your input here..."></textarea>
-                    <div class="flex justify-end mt-2">
-                        <button id="btn-process-lf" class="btn btn-wide text-lg">Process</button>
-                    </div>
-                </div>
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h2 class="text-xl font-bold mb-5">Output</h2>
-                    <div class="w-full h-75 p-3 border-2 border-gray-300 rounded-lg">
-                        <p id="lf-output" class="text-gray-500">Output will be displayed here...</p>
-                    </div>
-                    <!-- <textarea class="w-full h-40 p-2 border-2 border-gray-300 rounded-lg resize-none" placeholder="Enter your input here..."></textarea> -->
-                </div>
-            </div>
-        </section>
-        
-        <!-- first and follow -->
-        <section id="sec-ff"
-            class="hidden section mb-5 border-2 border-dashed border-orange-200 rounded-xl container m-auto">
-            <div class="rounded p-5 grid grid grid-cols-1 md:grid-cols-3 gap-5">
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h3 class="font-semibold text-2xl">First and Follow</h3>
-                </div>
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h3 class="font-semibold mb-2">Supported Grammars</h3>
-                    <ul class="text-gray-500 px-7 text-sm list-disc">
-                        <li>A -> A c | A a d | b d | ϵ <br>
-                            (All tokens must be separated by space characters)</li>
-                        <li>A -> A c
-                            <br>&emsp;&emsp;| A a d
-                            <br>&emsp;&emsp;| b d
-                            <br>&emsp;&emsp;| ϵ
-                        </li>
-                        <li>S -> A a | b
-                            <br>A -> A c | S d | ϵ
-                        </li>
-                        <li>(Copy ϵ to input if needed)</li>
-                    </ul>
-                </div>
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h3 class="font-semibold mb-2">Example</h3>
-                    <ul class="text-gray-500 px-7 text-sm list-disc">
-                        <li>S -> S S + | S S * | a</li>
-                        <li>S -> 0 S 1 | 0 1</li>
-                        <li>S -> ( L ) | a
-                            <br>L -> L , S | S
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="px-5 pb-5 grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h2 class="text-xl font-bold mb-5">Input</h2>
-                    <textarea id="ff-input" class="w-full h-60 p-3 border-2 border-gray-300 rounded-lg resize-none"
-                        placeholder="Enter your input here..."></textarea>
-                    <div class="flex justify-end mt-2">
-                        <button id="btn-process-ff" class="btn btn-wide text-lg">Process</button>
-                    </div>
-                </div>
-                <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
-                    <h2 class="text-xl font-bold mb-5">Output</h2>
-                    <div class="w-full h-75 p-3 border-2 border-gray-300 rounded-lg">
-                        <div id="ff-output">
-                            <table
-                            class="text-black overflow-auto w-full rounded-box border-collapse border border-gray-300">
-                            <thead>
-                                <tr>
-                                    <th class='border border-gray-300 px-4 py-2'>Non-Terminal</th>
-                                    <th class='border border-gray-300 px-4 py-2'>First</th>
-                                    <th class='border border-gray-300 px-4 py-2'>Follow</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
+
+            </aside>
+            
+
+            <section class="col-span-2">
+
+                <!-- left recursion -->
+                <section id="sec-lr" class="section rounded-xl">
+                    <div class="px-5 pb-5 grid grid-cols-1 gap-5">
+                        <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
+                            <h2 class="text-xl font-bold mb-5">Input</h2>
+                            <textarea id="lr-input" class="w-full h-60 p-3 border-2 border-gray-300 rounded-lg resize-none"
+                                placeholder="Enter your grammar here..."></textarea>
+                            <div class="flex justify-center mt-2">
+                                <button id="btn-process-lr" class="btn btn-wide rounded-3xl bg-red-500 text-white text-lg">Process</button>
+                            </div>
+                        </div>
+                        <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
+                            <h2 class="text-xl font-bold mb-5">Output</h2>
+                            <div class="w-full h-75 p-3 border-2 border-gray-300 rounded-lg">
+                                <p id="lr-output" class="text-gray-500">Output will be displayed here...</p>
+                            </div>
+                            
                         </div>
                     </div>
-                    <!-- <textarea class="w-full h-40 p-2 border-2 border-gray-300 rounded-lg resize-none" placeholder="Enter your input here..."></textarea> -->
-                </div>
-            </div>
+                </section>
+
+
+                <!-- left factoring -->
+                <section id="sec-lf" class="hidden section rounded-xl">
+                    <div class="px-5 pb-5 grid grid-cols-1 gap-5">
+                        <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
+                            <h2 class="text-xl font-bold mb-5">Input</h2>
+                            <textarea id="lf-input" class="w-full h-60 p-3 border-2 border-gray-300 rounded-lg resize-none"
+                                placeholder="Enter your grammar here..."></textarea>
+                            <div class="flex justify-center mt-2">
+                                <button id="btn-process-lf" class="btn btn-wide rounded-3xl bg-red-500 text-white text-lg">Process</button>
+                            </div>
+                        </div>
+                        <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
+                            <h2 class="text-xl font-bold mb-5">Output</h2>
+                            <div class="w-full h-75 p-3 border-2 border-gray-300 rounded-lg">
+                                <p id="lf-output" class="text-gray-500">Output will be displayed here...</p>
+                            </div>
+                            <!-- <textarea class="w-full h-40 p-2 border-2 border-gray-300 rounded-lg resize-none" placeholder="Enter your input here..."></textarea> -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- first and follow -->
+
+                <section id="sec-ff" class="hidden section rounded-xl">
+                    <div class="px-5 pb-5 grid grid-cols-1 gap-5">
+                        <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
+                            <h2 class="text-xl font-bold mb-5">Input</h2>
+                            <textarea id="ff-input" class="w-full h-60 p-3 border-2 border-gray-300 rounded-lg resize-none"
+                                placeholder="Enter your grammar here..."></textarea>
+                            <div class="flex justify-center mt-2">
+                                <button id="btn-process-ff" class="btn btn-wide rounded-3xl bg-red-500 text-white text-lg">Process</button>
+                            </div>
+                        </div>
+                        <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
+                            <h2 class="text-xl font-bold mb-5">Output</h2>
+                            <div class="w-full h-75 p-3 border-2 border-gray-300 rounded-lg">
+                                <div id="ff-output">
+                                    <table
+                                    class="text-black overflow-auto w-full rounded-box border-collapse border border-gray-300">
+                                    <thead>
+                                        <tr>
+                                            <th class='border border-gray-300 px-4 py-2'>Non-Terminal</th>
+                                            <th class='border border-gray-300 px-4 py-2'>First</th>
+                                            <th class='border border-gray-300 px-4 py-2'>Follow</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                            <!-- <textarea class="w-full h-40 p-2 border-2 border-gray-300 rounded-lg resize-none" placeholder="Enter your input here..."></textarea> -->
+                        </div>
+                    </div>
+                </section>
+
+
+            </section>
         </section>
+  
+        <!-- first and follow -->
+        
 
     </main>
 
     <!-- footer -->
-    <footer class="bg-gray-50 border-gray-200 pb-15 px-5">
+    <footer class="bg-gray-100  pb-15 px-5">
         <footer class="container mx-auto footer sm:footer-horizontal rounded-2xl bg-gray-200 text-base-content p-10">
             <aside class="md:max-w-sm">
               <img src="assets/logo_header.png" alt="">
