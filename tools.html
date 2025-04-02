@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compiler Forge Toolkit</title>
+    <title>Tools - Compiler Forge Toolkit</title>
 
     <!-- favicon -->
     <link rel="icon" href="assets/fav_ico.png" type="image/x-icon">
@@ -46,10 +46,10 @@
             <div>
               <ul class="flex items-center gap-7 font-semibold cursor-pointer">
                 <li class="hidden md:block"><a href="index.html" class="hover:text-red-600">Home</a></li>
-                <li class="hidden md:block"><a href="index.html" class="hover:text-red-600">Pricing</a></li>
+                <li class="hidden md:block"><a href="pricing.html" class="hover:text-red-600">Pricing</a></li>
                 <li id="btn-tools" class="py-1 text-lg text-red-500 border-red-500 transition-all duration-300 hover:scale-110"><i class="fa-solid fa-wand-magic-sparkles"></i> Tools</li>
                 <li class="hidden md:block"><a href="about.html" class="hover:text-red-600">About</a></li>
-                <li class="hidden md:block"><a href="features.html class=" hover:text-red-600">Contact</a></li>
+                <li class="hidden md:block"><a href="contact.html" hover:text-red-600">Contact</a></li>
             </ul>
             </div>
 
@@ -96,11 +96,17 @@
                 <div class="border-1 p-5 rounded-xl bg-white border-gray-300">
                     <h3 class="font-semibold mb-2">Example</h3>
                     <ul class="text-gray-500 px-7 text-sm list-disc">
-                        <li>S -> S S + | S S * | a</li>
-                        <li>S -> 0 S 1 | 0 1</li>
-                        <li>S -> ( L ) | a
+                        <li class="py-2 border-b-1 border-gray-300">S -> S S + | S S * | a</li>
+                        
+                        <li class="py-2 border-b-1 border-gray-300">S -> 0 S 1 | 0 1</li>
+                        
+                        <li class="py-2 border-b-1 border-gray-300">S -> ( L ) | a
                             <br>L -> L , S | S
                         </li>
+                        
+                        <li class="py-2 border-b-1 border-gray-300">S -> a S b S | b S a S | ϵ</li>
+                        <li class="py-2 border-b-1 border-gray-300">S -> S + S | S S | ( S ) | S * | a</li>
+                        <li class="py-2 border-b-1 border-gray-300">S -> ( L ) | a L -> L , S | S</li>
                     </ul>
                 </div>
 
