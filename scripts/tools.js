@@ -58,7 +58,7 @@ document.getElementById("btn-process-ff").addEventListener("click", () => {
     const result = computeFirstAndFollowSets(grammarInput);
     console.log("First and Follow Sets Computed:", result);
     document.getElementById("ff-output").innerText = "";
-    let tableHTML = "<table class='text-black overflow-auto w-full rounded-box border-collapse border border-gray-300'><thead><tr><th class='border border-gray-300 px-4 py-2'>Non-Terminal</th><th class='border border-gray-300 px-4 py-2'>First</th><th class='border border-gray-300 px-4 py-2'>Follow</th></tr></thead><tbody>";
+    let tableHTML = "<table class='text-sm md:text-lg text-black overflow-auto w-full rounded-box border-collapse border border-gray-300'><thead><tr><th class='border border-gray-300 px-4 py-2'>Non-Terminal</th><th class='border border-gray-300 px-4 py-2'>First</th><th class='border border-gray-300 px-4 py-2'>Follow</th></tr></thead><tbody>";
 
     for (const nonTerminal of Object.keys(result.first)) {
         const firstSet = result.first[nonTerminal].join(" ");  // No quotes
