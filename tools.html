@@ -71,13 +71,13 @@
             <aside class="col-span-1 sm:pr-5 md:border-r-2 border-red-500 ">
                 <div class="mb-10 flex flex-col flex-wrap justify-center gap-5">
                     <button id="lr"
-                        class="rounded-xl sm:text-lg active btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">Left
+                        class="rounded-xl lg:text-lg active btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">Left
                         Recursion Elimination</button>
                     <button id="lf"
-                        class="rounded-xl sm:text-lg btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">Left
+                        class="rounded-xl lg:text-lg btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">Left
                         Factoring</button>
                     <button id="ff"
-                        class="rounded-xl sm:text-lg btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">First
+                        class="rounded-xl lg:text-lg btn-tool btn bg-white text-red-500 border-red-500 hover:bg-red-500 hover:text-white">First
                         and Follow Set Calculation</button>
                 </div>
 
@@ -232,52 +232,42 @@
     </main>
 
     <!-- footer -->
-    <footer class="bg-gray-100  pb-15 px-5">
-        <footer
-            class="container mx-auto footer sm:footer-horizontal rounded-2xl bg-gray-200 text-base-content p-5 sm:p-10">
-            <aside class="md:max-w-sm">
-                <img src="assets/logo_header.png" alt="">
-                <p class="pl-2">
-                    Compiler Forge Toolkit simplifies compiler construction with instant, accurate outputs.
-                </p>
-                <br>
-                <br>
+    <footer class="bg-gray-50 border-gray-200 pb-15 px-5">
+        <div class="container mx-auto rounded-2xl bg-gray-200 text-base-content p-5 sm:p-10 flex flex-col gap-6">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-8 max-w-5xl mx-auto w-full">
+                <aside class="md:max-w-sm flex-shrink-0">
+                    <img src="assets/logo_header.png" alt="">
+                    <p class="pl-2">
+                        Compiler Forge Toolkit simplifies compiler construction with instant, accurate outputs.
+                    </p>
+                </aside>
+                <nav>
+                    <h6 class="font-semibold text-lg text-black">Explore</h6>
+                    <div class="grid grid-cols-1 gap-1">
+                        <a href="/" class="link link-hover">Home</a>
+                        <a href="/tools.html" class="link link-hover">Tools</a>
+                        <a href="/about.html" class="link link-hover">About</a>
+                        <a href="/contact.html" class="link link-hover">Contact</a>
+                    </div>
+                </nav>
+                <nav>
+                    <h6 class="font-semibold text-lg text-black">Follow</h6>
+                    <div class="grid grid-cols-1 gap-1">
+                        <a href="https://github.com/garodiaa" target="_blank" class="link link-hover">Github</a>
+                        <a href="https://www.linkedin.com/in/sourav-garodia/" target="_blank"
+                            class="link link-hover">LinkedIn</a>
+                        <a href="https://www.youtube.com/@garodia" target="_blank" class="link link-hover">Youtube</a>
+                    </div>
+                </nav>
 
-                <small class="pl-2"> © 2025 Compiler Forge Toolkit. All Rights Reserved.</small>
-            </aside>
-            <nav>
-                <h6 class="font-semibold text-lg text-black">Useful Link</h6>
-                <a class="link link-hover">Home</a>
-                <a class="link link-hover">Features</a>
-                <a class="link link-hover">Tools</a>
-                <a class="link link-hover">About</a>
-                <a class="link link-hover">Contact</a>
-            </nav>
-            <nav>
-                <h6 class="font-semibold text-lg text-black">Follow Us</h6>
-                <a class="link link-hover">Facebook</a>
-                <a class="link link-hover">Instagram</a>
-                <a class="link link-hover">LinkedIn</a>
-                <a class="link link-hover">X (Twitter)</a>
-                <a class="link link-hover">Github</a>
-            </nav>
-            <nav class="text-right">
-                <form>
-                    <h6 class="font-semibold text-lg text-black">Subscribe to our newsletter </h6>
-                    <fieldset class="w-80">
-                        <div class="join">
-                            <input type="text" placeholder="Enter your email" class="input input-bordered join-item" />
-                            <button class="btn bg-red-500 text-white join-item">Subscribe</button>
-                        </div>
-                    </fieldset>
-                    <br><br><br><br><br>
-                    <small class="pl-2 text-right"> Made with <span class="text-red-600">❤</span> by
-                        <strong>MarsLab</strong></small>
-                </form>
-            </nav>
-        </footer>
+            </div>
 
-
+            <div class="w-full flex justify-center mt-4">
+                <small class="text-center pl-2">© 2025 Compiler Forge Toolkit. Made with <span
+                        class="text-red-600">❤</span> by <strong><a
+                            href="https://github.com/garodiaa">Garodia</a></strong></small>
+            </div>
+        </div>
     </footer>
 
     <script src="scripts/tools.js"></script>
