@@ -1,5 +1,12 @@
 # Compiler Forge Toolkit
 
+![Version](https://img.shields.io/badge/version-1.0.0-red?style=flat)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=flat)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwindcss&logoColor=white&style=flat)
+![DaisyUI](https://img.shields.io/badge/DaisyUI-FF69B4?logo=daisyui&logoColor=white&style=flat)
+
+
 The Compiler Forge Toolkit is a web-based utility designed to simplify and accelerate learning in compiler design. Built as a companion tool to this book, it allows students and educators to instantly compute critical compiler construction components like Left Recursion Elimination, Left Factoring, and First & Follow Sets — all with just a few clicks.
 Whether you're learning the concepts for the first time or building a parser, Compiler Forge helps reduce manual effort and error by providing clean, structured outputs.
 
