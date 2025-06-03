@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,218 +16,222 @@
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/f6fc430968.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body class="font-[Poppins] text-gray-900">
 
-    <!-- header -->
-    <header class="bg-gray-50 border-b-2 border-gray-200 sticky top-0 z-50 py-5 h-5rem">
-        <nav class="px-5 container m-auto flex justify-between items-center">
-            <div>
-                <a href="index.html"><img class="h-8 sm:h-12" src="assets/logo_header.png" alt=""></a>
-            </div>
-            
-            <!-- mid -->
-            <div>
-              <ul class="flex items-center gap-7 font-semibold cursor-pointer">
-                <li class="hidden md:block"><a href="index.html" class="border-b-2 border-red-500 hover:text-red-600">Home</a></li>
-                <li class="hidden md:block"><a href="pricing.html" class="hover:text-red-600">Pricing</a></li>
-                <li id="btn-tools" class="py-1 text-lg text-red-500 border-red-500 transition-all duration-300 hover:scale-110"><i class="fa-solid fa-wand-magic-sparkles"></i> Tools</li>
-                <li class="hidden md:block"><a href="about.html" class="hover:text-red-600">About</a></li>
-                <li class="hidden md:block"><a href="contact.html" hover:text-red-600">Contact</a></li>
-            </ul>
-            </div>
+  <!-- header -->
+  <header class="bg-gray-50 border-b-2 border-gray-200 sticky top-0 z-50 py-5 h-5rem">
+    <nav class="px-5 container m-auto flex justify-between items-center">
+      <div>
+        <a href="index.html"><img class="h-8 sm:h-12" src="assets/logo_header.png" alt=""></a>
+      </div>
 
-            <div>
-              <button
-              class="btn btn-sm sm:btn-md py-1 bg-red-500 text-white border-red-500 hover:bg-transparent hover:text-red-500">Report a bug</button>
-            </div>
-        </nav>
-    </header>
+      <!-- mid -->
+      <div>
+        <ul class="flex items-center gap-7 font-semibold cursor-pointer">
+          <li class="hidden md:block"><a href="index.html" class="border-b-2 border-red-500 hover:text-red-600">Home</a>
+          </li>
+          <li id="btn-tools"
+            class="py-1 text-lg text-red-500 border-red-500 transition-all duration-300 hover:scale-110"><i
+              class="fa-solid fa-wand-magic-sparkles"></i> Tools</li>
+          <li class="hidden md:block"><a href="about.html" class="hover:text-red-600">About</a></li>
 
-    <!-- main -->
-    <main class=" bg-gray-50 pb-15 px-5">
-        <!-- hero section -->
-        <section class="container m-auto">
-            <div class="hero min-h-[calc(100vh-6rem)] ">
-                <div class="hero-content text-center flex-col">
-                  <div class="max-w-4xl">
-                    <h1 class="pb-2 text-5xl md:text-7xl font-semibold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 inline-block text-transparent bg-clip-text">Compiler Theory with Ease!</h1>
-                    <p class="py-6 text-gray-500">
-                        Struggling with Left Recursion, Left Factoring, or First-Follow calculations? Compiler Forge Toolkit simplifies compiler construction with instant, accurate outputs.
-                    </p>
-                    <div class="flex justify-center gap-5">
-                    <a href="tools.html"><button id="btn-gs" class="btn btn-lg bg-red-500 text-white border-red-500 hover:bg-transparent hover:text-red-500">Get Started</button></a>
+        </ul>
+      </div>
+
+      <div>
+        <a href="https://github.com/garodiaa/compiler-forge-toolkit" target="_blank"><button
+          class="btn btn-sm sm:btn-md py-1 bg-red-500 text-white border-red-500 hover:bg-transparent hover:text-red-500">Fork on GitHub</button></a>
+        
+      </div>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main class=" bg-gray-50 pb-15 px-5">
+    <!-- hero section -->
+    <section class="container m-auto">
+      <div class="hero min-h-[calc(100vh-6rem)] ">
+        <div class="hero-content text-center flex-col">
+          <div class="max-w-4xl">
+            <h1
+              class="pb-2 text-5xl md:text-7xl font-semibold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 inline-block text-transparent bg-clip-text">
+              Compiler Theory with Ease!</h1>
+            <p class="py-6 text-gray-500">
+              Struggling with Left Recursion, Left Factoring, or First-Follow calculations? Compiler Forge Toolkit
+              simplifies compiler construction with instant, accurate outputs.
+            </p>
+            <div class="flex justify-center gap-5">
+              <a href="tools.html"><button id="btn-gs"
+                  class="btn btn-lg bg-red-500 text-white border-red-500 hover:bg-transparent hover:text-red-500">Get
+                  Started</button></a>
+            </div>
+          </div>
+          <div class="w-full h-full">
+            <img class="w-full h-full object-cover" src="assets/hero 1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- steps -->
+    <section class="container m-auto">
+      <h3 class="text-center text-3xl font-semibold text-red-500">How to Use</h3>
+      <div class="py-10 max-w-2xl mx-auto">
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+          <li>
+            <div class="timeline-middle">
+              <div
+                class="flex items-center justify-center h-7 w-7 rounded-full bg-red-500 text-sm text-white font-bold">
+                01
+              </div>
+            </div>
+            <div class="timeline-start mr-5 mb-10 md:text-end">
+              <div class="text-lg font-bold">Choose Operation </div>
+              <p class="text-gray-600">Select the transformation or analysis you need</p>
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div class="timeline-middle">
+              <div
+                class="flex items-center justify-center h-7 w-7 rounded-full bg-red-500 text-sm text-white font-bold">
+                02
+              </div>
+            </div>
+            <div class="timeline-end ml-5 md:mb-10">
+
+              <div class="text-lg font-bold">Input Grammar</div>
+              <p class="text-gray-600">Enter your grammar rules in the provided input field</p>
+
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div class="timeline-middle">
+              <div
+                class="flex items-center justify-center h-7 w-7 rounded-full bg-red-500 text-sm text-white font-bold">
+                03
+              </div>
+            </div>
+            <div class="timeline-start mr-5 mb-10 md:text-end">
+              <div class="text-lg font-bold">Get Instant Results</div>
+              <p class="text-gray-600">Click the "Generate" button and get your transformed grammar</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- card -->
+    <section class="container m-auto my-20">
+      <div class="rounded-3xl bg-gradient-to-r from-red-600 to-red-500 text-white my-10">
+        <div class="max-w-3xl px-5 py-10 flex items-center justify-center gap-5 md:gap-30 mx-auto">
+          <div>
+            <h3 class="text-lg sm:text-3xl">No logins. No subscriptions.
+              Just powerful compiler tools at your fingertips.</h3>
+          </div>
+
+          <div>
+            <div class="">
+              <div class="p-4 rounded-full border-2 border-red-400">
+                <div class="p-4 rounded-full border-2 border-red-400">
+                  <div class="p-4 rounded-full border-2 border-red-400">
+                    <div class="p-4 rounded-full border-2 border-red-400">
+                      <a href="tools.html"><button
+                          class="btn bg-white text-red-500 border-red-400 hover:bg-transparent hover:text-white rounded-full w-12 h-12 flex items-center justify-center">Go</button></a>
                     </div>
-                </div>
-                <div class="w-full h-full">
-                  <img class="w-full h-full object-cover" src="assets/hero 1.png" alt="">
-                </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- steps -->
-        <section class="container m-auto">
-            <h3 class="text-center text-3xl font-semibold text-red-500">How to Use</h3>
-            <div class="py-10 max-w-2xl mx-auto">
-                <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-                    <li>
-                      <div class="timeline-middle">
-                        <div class="flex items-center justify-center h-7 w-7 rounded-full bg-red-500 text-sm text-white font-bold">
-                          01
-                        </div>
-                      </div>
-                      <div class="timeline-start mr-5 mb-10 md:text-end">
-                        <div class="text-lg font-bold">Choose Operation </div>
-                        <p class="text-gray-600">Select the transformation or analysis you need</p>
-                      </div>
-                      <hr />
-                    </li>
-                    <li>
-                      <hr />
-                      <div class="timeline-middle">
-                        <div class="flex items-center justify-center h-7 w-7 rounded-full bg-red-500 text-sm text-white font-bold">
-                            02
-                          </div>
-                      </div>
-                      <div class="timeline-end ml-5 md:mb-10">
-                       
-                        <div class="text-lg font-bold">Input Grammar</div>
-                        <p class="text-gray-600">Enter your grammar rules in the provided input field</p>
-                        
-                      </div>
-                      <hr />
-                    </li>
-                    <li>
-                      <hr />
-                      <div class="timeline-middle">
-                        <div class="flex items-center justify-center h-7 w-7 rounded-full bg-red-500 text-sm text-white font-bold">
-                            03
-                          </div>
-                      </div>
-                      <div class="timeline-start mr-5 mb-10 md:text-end">
-                        <div class="text-lg font-bold">Get Instant Results</div>
-                        <p class="text-gray-600">Click the "Generate" button and get your transformed grammar</p>
-                      </div>
-                    </li>
-                  </ul>
-            </div>
-        </section>
-
-        <!-- card -->
-        <section class="container m-auto my-20">
-            <div class="rounded-3xl bg-gradient-to-r from-red-600 to-red-500 text-white my-10">
-                <div class="max-w-3xl px-5 py-10 flex items-center justify-center gap-5 md:gap-30 mx-auto">
-                    <div>
-                        <h3 class="text-lg sm:text-3xl">No logins. No subscriptions.
-                            Just powerful compiler tools at your fingertips.</h3>
-                    </div>
-                    
-                    <div>
-                        <div class="">
-                            <div class="p-4 rounded-full border-2 border-red-400">
-                                <div class="p-4 rounded-full border-2 border-red-400">
-                                    <div class="p-4 rounded-full border-2 border-red-400">
-                                        <div class="p-4 rounded-full border-2 border-red-400">
-                                            <a href="tools.html"><button class="btn bg-white text-red-500 border-red-400 hover:bg-transparent hover:text-white rounded-full w-12 h-12 flex items-center justify-center">Go</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <!-- key features -->
-        <section class="container m-auto my-30 px-15">
-            <h3 class="text-center text-3xl font-semibold text-red-500">Key Features</h3>
-            <div class="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-2">
-                <div class="flex flex-col items-center rounded-lg p-5 gap-3">
-                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-red-500">
-                        <i class="text-white fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-1">Left Recursion Elimination</h4>
-                    <p class="text-gray-600">Automatically transform left-recursive grammars into equivalent non-left-recursive forms for easier parsing.</p>
-                </div>
-                <div class=" flex flex-col items-center rounded-lg p-5 gap-3">
-                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-red-500">
-                        <i class="text-white fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-1">Left Factoring</h4>
-                    <p class="text-gray-600">Optimize grammars by factoring out common prefixes, making them suitable for predictive parsing.</p>
-                </div>
-                <div class="flex flex-col items-center rounded-lg p-5 gap-3">
-                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-red-500">
-                        <i class="text-white fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-1">First and Follow Set Calculation</h4>
-                    <p class="text-gray-600">Instantly compute the First and Follow sets of a given grammar to aid in LL(1) parsing.</p>
-                </div>
-
-            </div>
-        </section>
-    </main>
-
-    <!-- footer -->
-    <footer class="bg-gray-50 border-gray-200 pb-15 px-5">
-        <footer class="container mx-auto footer sm:footer-horizontal rounded-2xl bg-gray-200 text-base-content p-5 sm:p-10">
-            <aside class="md:max-w-sm">
-              <img src="assets/logo_header.png" alt="">
-              <p class="pl-2">
-                Compiler Forge Toolkit simplifies compiler construction with instant, accurate outputs.
-              </p>
-              <br>
-              <br>
-
-              <small class="pl-2"> © 2025 Compiler Forge Toolkit. All Rights Reserved.</small>
-            </aside>
-            <nav>
-              <h6 class="font-semibold text-lg text-black">Useful Link</h6>
-              <a class="link link-hover">Home</a>
-              <a class="link link-hover">Features</a>
-              <a class="link link-hover">Tools</a>
-              <a class="link link-hover">About</a>
-              <a class="link link-hover">Contact</a>
-            </nav>
-            <nav>
-                <h6 class="font-semibold text-lg text-black">Follow Us</h6>
-              <a class="link link-hover">Facebook</a>
-              <a class="link link-hover">Instagram</a>
-              <a class="link link-hover">LinkedIn</a>
-              <a class="link link-hover">X (Twitter)</a>
-              <a class="link link-hover">Github</a> 
-            </nav>
-            <nav class="text-right">
-              <form>
-                <h6 class="font-semibold text-lg text-black">Subscribe to our newsletter </h6>
-                <fieldset class="w-80">
-                  <div class="join">
-                    <input
-                      type="text"
-                      placeholder="Enter your email"
-                      class="input input-bordered join-item" />
-                    <button class="btn bg-red-500 text-white join-item">Subscribe</button>
                   </div>
-                </fieldset>
-                <br><br><br><br><br>
-                <small class="pl-2 text-right"> Made with <span class="text-red-600">❤</span> by <strong>MarsLab</strong></small>
-              </form>
-            </nav>
-            </footer>
-  
+                </div>
+              </div>
+            </div>
+          </div>
 
-    </footer>
+        </div>
+      </div>
+    </section>
 
-    
-    
-    <script src="scripts/index.js"></script>
+    <!-- key features -->
+    <section class="container m-auto my-30 px-15">
+      <h3 class="text-center text-3xl font-semibold text-red-500">Key Features</h3>
+      <div class="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-2">
+        <div class="flex flex-col items-center rounded-lg p-5 gap-3">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full bg-red-500">
+            <i class="text-white fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-1">Left Recursion Elimination</h4>
+          <p class="text-gray-600">Automatically transform left-recursive grammars into equivalent non-left-recursive
+            forms for easier parsing.</p>
+        </div>
+        <div class=" flex flex-col items-center rounded-lg p-5 gap-3">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full bg-red-500">
+            <i class="text-white fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-1">Left Factoring</h4>
+          <p class="text-gray-600">Optimize grammars by factoring out common prefixes, making them suitable for
+            predictive parsing.</p>
+        </div>
+        <div class="flex flex-col items-center rounded-lg p-5 gap-3">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full bg-red-500">
+            <i class="text-white fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-1">First and Follow Set Calculation</h4>
+          <p class="text-gray-600">Instantly compute the First and Follow sets of a given grammar to aid in LL(1)
+            parsing.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-gray-50 border-gray-200 pb-15 px-5">
+    <div class="container mx-auto rounded-2xl bg-gray-200 text-base-content p-5 sm:p-10 flex flex-col gap-6">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-8">
+        <aside class="md:max-w-sm flex-shrink-0">
+          <img src="assets/logo_header.png" alt="">
+          <p class="pl-2">
+            Compiler Forge Toolkit simplifies compiler construction with instant, accurate outputs.
+          </p>
+        </aside>
+        <nav>
+          <h6 class="font-semibold text-lg text-black">Explore</h6>
+          <div class="grid grid-cols-1 gap-1">
+            <a href="/" class="link link-hover">Home</a>
+            <a href="/tools.html" class="link link-hover">Tools</a>
+            <a href="/about.html" class="link link-hover">About</a>
+            <a href="/contact.html" class="link link-hover">Contact</a>
+          </div>
+        </nav>
+        <nav>
+          <h6 class="font-semibold text-lg text-black">Follow</h6>
+          <div class="grid grid-cols-1 gap-1">
+            <a href="https://github.com/garodiaa" target="_blank" class="link link-hover">Github</a>
+            <a href="https://www.linkedin.com/in/sourav-garodia/" target="_blank" class="link link-hover">LinkedIn</a>
+            <a href="https://www.youtube.com/@garodia" target="_blank" class="link link-hover">Youtube</a>
+          </div>
+        </nav>
+      </div>
+      <div class="w-full flex justify-center mt-4">
+        <small class="text-center pl-2">© 2025 Compiler Forge Toolkit. Made with <span class="text-red-600">❤</span> by <strong><a
+              href="https://github.com/garodiaa">Garodia</a></strong></small>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="scripts/index.js"></script>
 </body>
+
 </html>

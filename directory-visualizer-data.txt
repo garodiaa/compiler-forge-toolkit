@@ -11,9 +11,7 @@ COMPILER-PROJECT
  ┃  ┣ lr.js
  ┃  ┗ tools.js
  ┣ about.html
- ┣ contact.html
  ┣ index.html
- ┣ pricing.html
  ┣ README.md
  ┣ tailwind.config.js
  ┗ tools.html
