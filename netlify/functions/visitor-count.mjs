@@ -5,7 +5,8 @@ const BASE_COUNT = 523;
 
 export default async () => {
   const store = getStore("site-stats");
-  const visits = await store.increment("visits");
+  const visits = Number((await store.get("visits")) ?? 0) + 1;
+  await store.set("visits", String(visits));
   return Response.json({ count: BASE_COUNT + visits });
 };
 
